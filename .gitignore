@@ -1,0 +1,4 @@
+/Project/*.csproj
+/Project/Library
+/Project/Logs
+/Project/*.sln
