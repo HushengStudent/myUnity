@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.code-philosophy.hybridclr": {
+      "version": "file:hybridclr_unity-8.4.0",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.burst": {
       "version": "1.8.21",
       "depth": 1,

@@ -29,4 +29,6 @@
 
 ## **_插件_**
 
+[**hybridclr_unity-8.4.0**](https://github.com/focus-creative-games/hybridclr_unity/releases/tag/v8.4.0)
+
 [**UniTask**](https://github.com/Cysharp/UniTask)
