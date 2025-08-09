@@ -4,3 +4,8 @@
 /Project/*.sln
 /Project/UserSettings/Layouts
 /Project/Temp
+/Project/UserSettings/Search.index
+/Project/UserSettings/Search.settings
+/Project/HybridCLRData/StrippedAOTDllsTempProj
+/Project/HybridCLRData/AssembliesPostIl2CppStrip
+/Project/HybridCLRData/HotUpdateDlls
