@@ -23,7 +23,7 @@ namespace HybridCLR.Editor
         {
             var target = EditorUserBuildSettings.activeBuildTarget;
             string aotAssembliesSrcDir = SettingsUtil.GetAssembliesPostIl2CppStripDir(target);
-            string aotAssembliesDstDir = Application.streamingAssetsPath + "/Dll";
+            string aotAssembliesDstDir = Application.streamingAssetsPath + "/Dlls";
 
             foreach (var dll in SettingsUtil.AOTAssemblyNames)
             {
@@ -46,7 +46,7 @@ namespace HybridCLR.Editor
             var target = EditorUserBuildSettings.activeBuildTarget;
 
             string hotfixDllSrcDir = SettingsUtil.GetHotUpdateDllsOutputDirByTarget(target);
-            string hotfixAssembliesDstDir = Application.streamingAssetsPath + "/Dll";
+            string hotfixAssembliesDstDir = Application.streamingAssetsPath + "/Dlls";
             foreach (var dll in SettingsUtil.HotUpdateAssemblyFilesExcludePreserved)
             {
                 string dllPath = $"{hotfixDllSrcDir}/{dll}";

@@ -26,7 +26,7 @@ public class LoadDll : MonoBehaviour
 
     private string GetWebRequestPath(string asset)
     {
-        var path = $"{Application.streamingAssetsPath}/{asset}";
+        var path = $"{Application.streamingAssetsPath}/Dlls/{asset}";
         if (!path.Contains("://"))
         {
             path = "file://" + path;
@@ -44,8 +44,7 @@ public class LoadDll : MonoBehaviour
     {
         var assets = new List<string>
         {
-            "prefabs",
-            "HotUpdate.dll.bytes",
+            "Assembly-CSharp.dll.bytes",
         }.Concat(AOTMetaAssemblyFiles);
 
         foreach (var asset in assets)
@@ -111,5 +110,7 @@ public class LoadDll : MonoBehaviour
 #endif
         // Type entryType = _hotUpdateAss.GetType("Entry");
         // entryType.GetMethod("Start").Invoke(null, null);
+        
+        Destroy(gameObject);
     }
 }
