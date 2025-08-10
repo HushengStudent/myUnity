@@ -161,6 +161,11 @@ namespace vm
         return s_FieldMap->GetOrAdd(key, res);
     }
 
+    const FieldInfo* Reflection::GetField(const Il2CppReflectionField* field)
+    {
+        return field->field;
+    }
+
     const MethodInfo* Reflection::GetMethod(const Il2CppReflectionMethod* method)
     {
         return method->method;
@@ -561,11 +566,10 @@ namespace vm
 
             if (method->method->parameters == NULL)
                 return il2cpp::metadata::CustomAttributeDataReader::Empty();
-
 #if !SUPPORT_METHOD_RETURN_TYPE_CUSTOM_ATTRIBUTE
             IL2CPP_NOT_IMPLEMENTED_NO_ASSERT(Reflection::GetCustomAttributeReaderFor, "-1 represents the return value. Need to emit custom attribute information for that.")
-                if (parameter->PositionImpl == -1)
-                    return il2cpp::metadata::CustomAttributeDataReader::Empty();
+            if (parameter->PositionImpl == -1)
+                return il2cpp::metadata::CustomAttributeDataReader::Empty();
 #endif
         }
 
@@ -681,7 +685,6 @@ namespace vm
 
         s_System_Reflection_Assembly = Class::FromName(il2cpp_defaults.corlib, "System.Reflection", "RuntimeAssembly");
         IL2CPP_ASSERT(s_System_Reflection_Assembly != NULL);
-#if !IL2CPP_TINY_DEBUGGER
         s_System_Reflection_Module = Class::FromName(il2cpp_defaults.corlib, "System.Reflection", "RuntimeModule");
         IL2CPP_ASSERT(s_System_Reflection_Module != NULL);
 
@@ -700,7 +703,6 @@ namespace vm
         IL2CPP_ASSERT(s_System_Reflection_RuntimeEventInfoKlass != NULL);
         s_System_Reflection_RuntimePropertyInfoKlass = Class::FromName(il2cpp_defaults.corlib, "System.Reflection", "RuntimePropertyInfo");
         IL2CPP_ASSERT(s_System_Reflection_RuntimePropertyInfoKlass != NULL);
-#endif
     }
 
     bool Reflection::HasAttribute(FieldInfo *field, Il2CppClass *attributeClass)

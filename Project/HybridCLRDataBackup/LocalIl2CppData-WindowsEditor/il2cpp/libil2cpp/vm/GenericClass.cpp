@@ -266,6 +266,5 @@ namespace vm
     {
         return Type::IsEnum(gclass->type);
     }
-
 } /* namespace vm */
 } /* namespace il2cpp */
