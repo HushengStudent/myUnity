@@ -1,11 +1,11 @@
 # **_myUnity_**
 
-#### **_Unity 6000.1.15f1_**
+#### **_Unity 6000.0.55f1_**
 
 ## **_基建与系统_**
 |__________________|__________________|__________________|__________________|__________________|
 |:--------:|:------:|:--------:|:--------:|:--------:|
-|[✔️**基础知识**](https://github.com/HushengStudent/myUnity/blob/main/Doc/Basics/basic_knowledge/basic_knowledge.md)|[✔️**HybridCLR**](https://github.com/HushengStudent/myUnity/blob/main/Doc/Basics/hybridclr/hybridclr.md)||||
+|[✔️**基础知识**](https://github.com/HushengStudent/myUnity/blob/main/Doc/Basics/basic_knowledge/basic_knowledge.md)|[✔️**HybridCLR**](https://github.com/HushengStudent/myUnity/blob/main/Doc/Basics/hybridclr/hybridclr.md)|[✔️**DOTS**](https://github.com/HushengStudent/myUnity/blob/main/Doc/Basics/dots/dots.md)|||
 
 ## **_GamePlay_**
 |__________________|__________________|__________________|__________________|__________________|
@@ -32,3 +32,5 @@
 [**hybridclr_unity-8.4.0**](https://github.com/focus-creative-games/hybridclr_unity/releases/tag/v8.4.0)
 
 [**UniTask.2.5.10**](https://github.com/Cysharp/UniTask/releases)
+
+[**YooAsset**](https://github.com/tuyoogame/YooAsset)
