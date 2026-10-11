@@ -2,7 +2,7 @@
 
 #### **_Unity 6000.0.55f1_**
 
-## <sub>**_基建与系统_**</sub>
+## **_基建与系统_**
 
 - <sub>[✔️基础知识](https://github.com/HushengStudent/myUnity/blob/main/Doc/Basics/basic_knowledge/basic_knowledge.md)</sub>
 - <sub>[✔️HybridCLR](https://github.com/HushengStudent/myUnity/blob/main/Doc/Basics/hybridclr/hybridclr.md)</sub>
